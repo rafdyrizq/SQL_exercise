@@ -1,4 +1,4 @@
--- Membuat tabel transaksi coffee shop dengan nama pemain bola dan barista
+-- Membuat tabel transaksi coffee shop
 CREATE TABLE coffee_transactions (
     transaction_id INT PRIMARY KEY AUTO_INCREMENT,
     transaction_date DATETIME NOT NULL,
@@ -12,7 +12,7 @@ CREATE TABLE coffee_transactions (
     barista_name VARCHAR(50)
 );
 
--- Insert 30 transaksi dengan nama pemain bola dan barista
+-- Insert 30 transaksi
 INSERT INTO coffee_transactions (transaction_date, customer_name, menu_item, item_category, quantity, item_price, total_amount, payment_method, barista_name) VALUES
 ('2023-10-01 08:15:00', 'Lionel Messi', 'Latte', 'Coffee', 1, 30.00, 30.00, 'Debit Card', 'Jordan'),
 ('2023-10-01 09:30:00', 'Cristiano Ronaldo', 'Cappuccino', 'Coffee', 1, 28.00, 28.00, 'Cash', 'Kevin'),
